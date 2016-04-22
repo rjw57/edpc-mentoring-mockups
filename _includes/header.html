@@ -8,11 +8,13 @@
 <div class="lt-ie9">
 <![endif]-->
 
+{% include global_header.html %}
+
 <div class="campl-row campl-page-header">
     <div class="campl-wrap clearfix">
         <div class="campl-column12">
             <div class="campl-content-container">
-                <p class="campl-page-title">{{ page.title }}</p>
+                <p class="campl-page-title">{{ site.title }}</p>
             </div>
         </div>
     </div>
@@ -35,8 +37,19 @@
             </ul>
         </div>
     </div>
+
+    {% if page.title %}
+    <div class="campl-wrap clearfix campl-page-sub-title campl-recessed-sub-title">
+        <div class="campl-column12">
+            <div class="campl-content-container">
+                <p class="campl-sub-title">{{ page.title }}</p>
+            </div>
+        </div>
+    </div>
+    {% endif %}
 </div>
 
 <div class="campl-main-content">
-    <div class="campl-row campl-content">
+    <div class="campl-row campl-content
+                {% if page.title %}campl-recessed-content{% endif %}">
         <div class="campl-wrap clearfix">
