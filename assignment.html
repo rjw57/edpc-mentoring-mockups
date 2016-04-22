@@ -1,6 +1,76 @@
 ---
 layout: default
-title: Assignment
 ---
-<div class="campl-content-container">
+<h1>People currently seeking mentors</h1>
+
+<p>Below is a list of people who are currently seeking a mentor. You may filter
+the list by division and whether the person alreay has at least one mentor.</p>
+
+<div class="campl-control-group">
+    <label for="division">Division</label>
+    <select>
+        <option>All divisions</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+        <option>E</option>
+        <option>F</option>
+    </select>
+
+    <label class="campl-checkbox" for="no-mentors">
+        Only show people who do not currently have a mentor
+        <input type="checkbox" id="no-mentors">
+    </label>
 </div>
+
+<table class="campl-table-bordered campl-table-striped campl-table campl-vertical-stacking-table">
+    <thead>
+        <tr>
+            <th>CRSid</th>
+            <th>Name</th>
+            <th>Division</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>test0001</td>
+            <td>Jane Example</td>
+            <td>C</td>
+            <td>No mentor</td>
+            <td><a href="invite-mentor.html">Select a mentor</a></td>
+        </tr>
+        <tr>
+            <td>test0002</td>
+            <td>Ian Sample</td>
+            <td>D</td>
+            <td>Invitation sent</td>
+            <td><a href="#">Invitation details</a></td>
+        </tr>
+        <tr>
+            <td>test0003</td>
+            <td>Johnny Appleseed</td>
+            <td>E</td>
+            <td>No mentor</td>
+            <td><a href="invite-mentor.html">Select a mentor</a></td>
+        </tr>
+        <tr>
+            <td>test0004</td>
+            <td>Marcus Fictitious</td>
+            <td>F</td>
+            <td>Has <a href="#">2 mentors</a></td>
+            <td>
+                <a href="invite-mentor.html">Select a mentor</a>
+            </td>
+        </tr>
+        <tr>
+            <td>test0005</td>
+            <td>Ryan Unreal</td>
+            <td>B</td>
+            <td>No mentor</td>
+            <td><a href="invite-mentor.html">Select a mentor</a></td>
+        </tr>
+    </tbody>
+</table>
