@@ -1,25 +1,29 @@
 ---
 layout: default
-title: Record a meeting
+title: Record a meeting with a mentee
 ---
-<h1>Meeting details</h1>
-
 <div class="campl-notifications-panel campl-alert-panel
     campl-notifications-container clearfix">
-    <p>
-    The latest meeting recorded between this mentee and mentor
-    was on <strong>1st April 2017</strong> and was added by <strong>Jane
-    Example</strong> (test0012). Only proceed if this is truly a new
-    meeting.
-    </p>
+    <div class="campl-column2">
+        <p class="campl-notifications-icon campl-alert-icon">Alert:</p>
+    </div>
+    <div class="campl-column10">
+        <p>
+        Your mentee <strong>Jane Example</strong> recently recorded a meeting with
+        you on <strong>1st April 2017</strong>. Only proceed if this is truly a new
+        meeting.
+        </p>
+    </div>
 </div>
 
 <div class="campl-control-group">
-    <label class="control-label" for="mentor">Mentor</label>
+    <label class="control-label" for="mentor">Mentor (you)</label>
     <input type="text" name="mentor" disabled="1" value="Bob Example" />
 
     <label class="control-label" for="mentee">Mentee</label>
-    <input type="text" name="mentee" disabled="1" value="Jane example" />
+    <select>
+        <option>Jane Example (test0003)</option>
+    </select>
 
     <label class="control-label" for="date">Date of meeting</label>
     <input type="date" name="date" />
@@ -30,6 +34,6 @@ title: Record a meeting
 </div>
 
 <div class="campl-form-actions">
-    <button type="button" class="campl-btn">Record meeting</button>
+    <button type="button" class="campl-btn campl-primary-cta">Record meeting</button>
 </div>
 
